@@ -1,1 +1,3 @@
-# comp3134Winter2024
+Igor Tsyupko
+
+COMP3134
