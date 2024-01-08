@@ -1,0 +1,31 @@
+What is the definition of server port?
+
+Serve port is a numerical identifier that is assigned to a specific
+communication channel on a computer, allowing programs or services to send
+and receive data. In simple words, port is like a door in a computer that 
+allows information to come in or out.
+
+What is server port range?
+
+Server port range is a set of port numbers in a network that is designated
+for some specific purpose. Each port allows communication in and out.
+For example, a common port for HTTP traffic that we've used previously is 80.
+
+How many bits does number above represent?
+
+Port numbers are represented using 16 bits.
+16 bit integers can range from 0 to 65535.
+
+State 10 common server ports
+
+Port 80 - HTTP
+Port 443 - HTTPS
+Port 8080 - Alternative HTTP
+Port 3306 - MySQL
+Port 1521 - Oracle
+Port 22 - SSH
+Port 53 - DNS
+Port 21 - FTP
+Port 27017 - MongoDB
+Port 25565 - Minecraft Servers
+
