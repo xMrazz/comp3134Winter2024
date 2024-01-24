@@ -1,0 +1,8 @@
+root@comp3134:~# traceroute apple.ca
+traceroute to apple.ca (17.253.144.10), 30 hops max, 60 byte packets
+ 1  162.243.190.9 (162.243.190.9)  1.507 ms 162.243.190.8 (162.243.190.8)  3.508 ms 162.243.190.9 (162.243.190.9)  1.674 ms
+ 2  143.198.252.196 (143.198.252.196)  1.378 ms 143.198.252.198 (143.198.252.198)  1.638 ms 143.198.252.192 (143.198.252.192)  1.621 ms
+ 3  toro-b5-link.ip.twelve99.net (62.115.9.209)  1.917 ms toro-b5-link.ip.twelve99.net (62.115.55.29)  2.301 ms  1.915 ms
+ 4  toro-b2-link.ip.twelve99.net (62.115.117.229)  2.181 ms  2.449 ms  1.830 ms
+ 5  apple-ic-375876.ip.twelve99-cust.net (213.248.78.193)  2.131 ms apple-ic-375877.ip.twelve99-cust.net (213.248.78.197)  1.900 ms apple-ic-375876.ip.twelve99-cust.net (213.248.78.193)  2.381 ms
+ 6  iphone.apple.com (17.253.144.10)  3.810 ms !X  3.034 ms !X  2.995 ms !X
