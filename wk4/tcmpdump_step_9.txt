@@ -1,0 +1,294 @@
+root@comp3134:~# tcpdump -i eth0 tcp
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+17:49:36.055857 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3964571543:3964571671, ack 2629508978, win 502, options [nop,nop,TS val 200866399 ecr 2138257254], length 128
+17:49:36.055988 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 128:272, ack 1, win 502, options [nop,nop,TS val 200866399 ecr 2138257254], length 144
+17:49:36.056082 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 272:352, ack 1, win 502, options [nop,nop,TS val 200866399 ecr 2138257254], length 80
+17:49:36.056160 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 352:496, ack 1, win 502, options [nop,nop,TS val 200866399 ecr 2138257254], length 144
+17:49:36.056582 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 128, win 3424, options [nop,nop,TS val 2138257264 ecr 200866399], length 0
+17:49:36.056582 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 272, win 3423, options [nop,nop,TS val 2138257264 ecr 200866399], length 0
+17:49:36.056582 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 352, win 3423, options [nop,nop,TS val 2138257265 ecr 200866399], length 0
+17:49:36.056719 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 496, win 3422, options [nop,nop,TS val 2138257265 ecr 200866399], length 0
+17:49:36.155265 IP comp3134.47136 > 67.207.67.3.domain: Flags [S], seq 1720023811, win 64240, options [mss 1460,sackOK,TS val 2198725380 ecr 0,nop,wscale 7,exp-tfo cookiereq], length 0
+17:49:36.156914 IP 67.207.67.3.domain > comp3134.47136: Flags [S.], seq 861446632, ack 1720023812, win 65160, options [mss 1460,sackOK,TS val 330374348 ecr 2198725380,nop,wscale 9], length 0
+17:49:36.156973 IP comp3134.47136 > 67.207.67.3.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 2198725381 ecr 330374348], length 0
+17:49:36.157095 IP comp3134.47136 > 67.207.67.3.domain: Flags [P.], seq 1:48, ack 1, win 502, options [nop,nop,TS val 2198725381 ecr 330374348], length 47 32513+ PTR? 66.190.243.162.in-addr.arpa. (45)
+17:49:36.157744 IP 67.207.67.3.domain > comp3134.47136: Flags [.], ack 48, win 128, options [nop,nop,TS val 330374349 ecr 2198725381], length 0
+17:49:36.157996 IP 67.207.67.3.domain > comp3134.47136: Flags [P.], seq 1:115, ack 48, win 128, options [nop,nop,TS val 330374349 ecr 2198725381], length 114 32513 NXDomain 0/1/0 (112)
+17:49:36.158013 IP comp3134.47136 > 67.207.67.3.domain: Flags [.], ack 115, win 502, options [nop,nop,TS val 2198725382 ecr 330374349], length 0
+17:49:36.160617 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 496:736, ack 1, win 502, options [nop,nop,TS val 200866504 ecr 2138257265], length 240
+17:49:36.160764 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 736:1008, ack 1, win 502, options [nop,nop,TS val 200866504 ecr 2138257265], length 272
+17:49:36.160896 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 1008:1280, ack 1, win 502, options [nop,nop,TS val 200866504 ecr 2138257265], length 272
+17:49:36.160997 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 1280:1616, ack 1, win 502, options [nop,nop,TS val 200866504 ecr 2138257265], length 336
+17:49:36.161129 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 1616:2096, ack 1, win 502, options [nop,nop,TS val 200866504 ecr 2138257265], length 480
+17:49:36.161250 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2096:2160, ack 1, win 502, options [nop,nop,TS val 200866505 ecr 2138257265], length 64
+17:49:36.161279 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2160:2368, ack 1, win 502, options [nop,nop,TS val 200866505 ecr 2138257265], length 208
+17:49:36.161375 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2368:2432, ack 1, win 502, options [nop,nop,TS val 200866505 ecr 2138257265], length 64
+17:49:36.161474 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2432:2640, ack 1, win 502, options [nop,nop,TS val 200866505 ecr 2138257265], length 208
+17:49:36.161560 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2640:2704, ack 1, win 502, options [nop,nop,TS val 200866505 ecr 2138257265], length 64
+17:49:36.161697 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 736, win 3424, options [nop,nop,TS val 2138257369 ecr 200866504], length 0
+17:49:36.161697 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 1008, win 3422, options [nop,nop,TS val 2138257369 ecr 200866504], length 0
+17:49:36.161697 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 1280, win 3420, options [nop,nop,TS val 2138257370 ecr 200866504], length 0
+17:49:36.161697 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 1616, win 3418, options [nop,nop,TS val 2138257370 ecr 200866504], length 0
+17:49:36.161697 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2096, win 3415, options [nop,nop,TS val 2138257370 ecr 200866504], length 0
+17:49:36.161797 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2160, win 3415, options [nop,nop,TS val 2138257370 ecr 200866505], length 0
+17:49:36.161926 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2368, win 3414, options [nop,nop,TS val 2138257370 ecr 200866505], length 0
+17:49:36.162048 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2432, win 3414, options [nop,nop,TS val 2138257370 ecr 200866505], length 0
+17:49:36.162048 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2640, win 3413, options [nop,nop,TS val 2138257370 ecr 200866505], length 0
+17:49:36.162104 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2704, win 3413, options [nop,nop,TS val 2138257370 ecr 200866505], length 0
+17:49:36.258979 IP comp3134.47136 > 67.207.67.3.domain: Flags [P.], seq 48:92, ack 115, win 502, options [nop,nop,TS val 2198725483 ecr 330374349], length 44 8094+ PTR? 3.67.207.67.in-addr.arpa. (42)
+17:49:36.273992 IP 67.207.67.3.domain > comp3134.47136: Flags [P.], seq 115:226, ack 92, win 128, options [nop,nop,TS val 330374465 ecr 2198725483], length 111 8094 NXDomain 0/1/0 (109)
+17:49:36.274052 IP comp3134.47136 > 67.207.67.3.domain: Flags [.], ack 226, win 502, options [nop,nop,TS val 2198725498 ecr 330374465], length 0
+17:49:36.332454 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2704:2944, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257370], length 240
+17:49:36.332603 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 2944:3008, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257370], length 64
+17:49:36.332850 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3008:3248, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257370], length 240
+17:49:36.332947 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3248:3312, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257370], length 64
+17:49:36.332965 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 2944, win 3424, options [nop,nop,TS val 2138257541 ecr 200866676], length 0
+17:49:36.333007 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3312:3504, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257541], length 192
+17:49:36.333113 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3504:3568, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257541], length 64
+17:49:36.333150 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3568:3824, ack 1, win 502, options [nop,nop,TS val 200866676 ecr 2138257541], length 256
+17:49:36.333214 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3824:3888, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 64
+17:49:36.333289 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3888:4096, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 208
+17:49:36.333363 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4096:4160, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 64
+17:49:36.333456 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4160:4400, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 240
+17:49:36.333594 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4400:4464, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 64
+17:49:36.333650 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4464:4672, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 208
+17:49:36.333781 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4672:4736, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 64
+17:49:36.333837 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4736:4944, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257541], length 208
+17:49:36.333949 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 4400, win 3413, options [nop,nop,TS val 2138257542 ecr 200866676], length 0
+17:49:36.333977 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 4944:5008, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257542], length 64
+17:49:36.334075 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 5008:5232, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257542], length 224
+17:49:36.334177 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 5232:5296, ack 1, win 502, options [nop,nop,TS val 200866677 ecr 2138257542], length 64
+17:49:36.334295 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 5296:5520, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 224
+17:49:36.334383 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 5520:5808, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 288
+17:49:36.334483 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 5808:6160, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 352
+17:49:36.334628 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 6160:6384, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 224
+17:49:36.334728 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 6384:6672, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 288
+17:49:36.334839 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 6672:6736, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 64
+17:49:36.334868 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 6736:6960, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 224
+17:49:36.334940 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 6960:7024, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257542], length 64
+17:49:36.335019 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 6160, win 3400, options [nop,nop,TS val 2138257543 ecr 200866677], length 0
+17:49:36.335038 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7024:7248, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257543], length 224
+17:49:36.335127 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7248:7536, ack 1, win 502, options [nop,nop,TS val 200866678 ecr 2138257543], length 288
+17:49:36.335224 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7536:7600, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 64
+17:49:36.335284 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7600:7808, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 208
+17:49:36.335352 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7808:7872, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 64
+17:49:36.335437 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 7872:8080, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 208
+17:49:36.335678 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8080:8144, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 64
+17:49:36.335778 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8144:8352, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257543], length 208
+17:49:36.335847 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 7808, win 3388, options [nop,nop,TS val 2138257544 ecr 200866678], length 0
+17:49:36.335864 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8352:8416, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257544], length 64
+17:49:36.335936 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8416:8624, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257544], length 208
+17:49:36.336035 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8624:8688, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257544], length 64
+17:49:36.336082 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8688:8896, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257544], length 208
+17:49:36.336155 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8896:8960, ack 1, win 502, options [nop,nop,TS val 200866679 ecr 2138257544], length 64
+17:49:36.336233 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 8960:9232, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 272
+17:49:36.336303 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 9232:9440, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 208
+17:49:36.336373 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 9440:9712, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 272
+17:49:36.336449 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 9712:9984, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 272
+17:49:36.336514 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 9984:10048, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 64
+17:49:36.336595 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10048:10320, ack 1, win 502, options [nop,nop,TS val 200866680 ecr 2138257544], length 272
+17:49:36.336804 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 9440, win 3376, options [nop,nop,TS val 2138257545 ecr 200866679], length 0
+17:49:36.350268 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10048:10320, ack 1, win 502, options [nop,nop,TS val 200866694 ecr 2138257545], length 272
+17:49:36.350888 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 10320, win 3370, options [nop,nop,TS val 2138257559 ecr 200866680,nop,nop,sack 1 {10048:10320}], length 0
+17:49:36.362638 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10320:10576, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 256
+17:49:36.362826 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10576:10640, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 64
+17:49:36.362889 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10640:10880, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 240
+17:49:36.363010 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10880:10944, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 64
+17:49:36.363057 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 10944:11152, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 208
+17:49:36.363187 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 11152:11216, ack 1, win 502, options [nop,nop,TS val 200866706 ecr 2138257559], length 64
+17:49:36.363234 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 10576, win 3423, options [nop,nop,TS val 2138257571 ecr 200866706], length 0
+17:49:36.363303 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 11216:11440, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257571], length 224
+17:49:36.363338 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 10640, win 3423, options [nop,nop,TS val 2138257571 ecr 200866706], length 0
+17:49:36.363435 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 10880, win 3422, options [nop,nop,TS val 2138257571 ecr 200866706], length 0
+17:49:36.363456 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 11440:11504, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257571], length 64
+17:49:36.363474 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 10944, win 3422, options [nop,nop,TS val 2138257571 ecr 200866706], length 0
+17:49:36.363523 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 11504:11728, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257571], length 224
+17:49:36.363649 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 11728:12016, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257571], length 288
+17:49:36.363670 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 11152, win 3421, options [nop,nop,TS val 2138257571 ecr 200866706], length 0
+17:49:36.363849 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 11216, win 3421, options [nop,nop,TS val 2138257572 ecr 200866706], length 0
+17:49:36.363849 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 11440, win 3420, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.363874 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12016:12080, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257572], length 64
+17:49:36.363950 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12080:12304, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257572], length 224
+17:49:36.364090 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 11504, win 3420, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.364109 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12304:12576, ack 1, win 502, options [nop,nop,TS val 200866707 ecr 2138257572], length 272
+17:49:36.364240 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 11728, win 3419, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.364376 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12016, win 3417, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.364389 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12576:12864, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257572], length 288
+17:49:36.364401 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12080, win 3417, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.364401 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12304, win 3416, options [nop,nop,TS val 2138257572 ecr 200866707], length 0
+17:49:36.364524 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12864:12928, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257572], length 64
+17:49:36.364574 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 12928:13152, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257572], length 224
+17:49:36.364671 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 13152:13216, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257572], length 64
+17:49:36.364765 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12576, win 3414, options [nop,nop,TS val 2138257573 ecr 200866707], length 0
+17:49:36.364784 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 13216:13504, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257573], length 288
+17:49:36.364970 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 13504:14016, ack 1, win 502, options [nop,nop,TS val 200866708 ecr 2138257573], length 512
+17:49:36.365201 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 14016:14592, ack 1, win 502, options [nop,nop,TS val 200866709 ecr 2138257573], length 576
+17:49:36.365731 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 14592:16080, ack 1, win 502, options [nop,nop,TS val 200866709 ecr 2138257573], length 1488
+17:49:36.365861 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 16080:16368, ack 1, win 502, options [nop,nop,TS val 200866709 ecr 2138257573], length 288
+17:49:36.365983 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 16368:16656, ack 1, win 502, options [nop,nop,TS val 200866709 ecr 2138257573], length 288
+17:49:36.366102 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 16656:16944, ack 1, win 502, options [nop,nop,TS val 200866709 ecr 2138257573], length 288
+17:49:36.366235 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 16944:17168, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 224
+17:49:36.366348 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 17168:17456, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 288
+17:49:36.366508 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 17456:17744, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 288
+17:49:36.366627 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 17744:18032, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 288
+17:49:36.366745 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18032:18320, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 288
+17:49:36.366865 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18320:18384, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 64
+17:49:36.366891 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18384:18608, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 224
+17:49:36.366984 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18608:18672, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 64
+17:49:36.367074 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18672:18896, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 224
+17:49:36.367165 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18896:18960, ack 1, win 502, options [nop,nop,TS val 200866710 ecr 2138257573], length 64
+17:49:36.367262 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 18960:19248, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 288
+17:49:36.367357 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 19248:19456, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 208
+17:49:36.367453 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 19456:19520, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 64
+17:49:36.367542 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 19520:19744, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 224
+17:49:36.367631 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 19744:19808, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 64
+17:49:36.367720 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 19808:20032, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 224
+17:49:36.367911 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 20032:20320, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 288
+17:49:36.368020 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 20320:20608, ack 1, win 502, options [nop,nop,TS val 200866711 ecr 2138257573], length 288
+17:49:36.368313 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12864, win 3412, options [nop,nop,TS val 2138257573 ecr 200866708], length 0
+17:49:36.368360 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 20608:20896, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257573], length 288
+17:49:36.368495 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 20896:20960, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257573], length 64
+17:49:36.368630 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 12928, win 3412, options [nop,nop,TS val 2138257573 ecr 200866708], length 0
+17:49:36.368630 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 14592, win 3399, options [nop,nop,TS val 2138257574 ecr 200866708], length 0
+17:49:36.368630 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 16080, win 3388, options [nop,nop,TS val 2138257574 ecr 200866709], length 0
+17:49:36.368631 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 17744, win 3375, options [nop,nop,TS val 2138257575 ecr 200866709], length 0
+17:49:36.368663 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 20960:21248, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257573], length 288
+17:49:36.368700 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 19248, win 3364, options [nop,nop,TS val 2138257576 ecr 200866710], length 0
+17:49:36.368803 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 21248:21536, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257576], length 288
+17:49:36.368929 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 21536:21760, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257576], length 224
+17:49:36.369037 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 21760:22032, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257576], length 272
+17:49:36.369063 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 20896, win 3352, options [nop,nop,TS val 2138257577 ecr 200866711], length 0
+17:49:36.369187 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 22032:22256, ack 1, win 502, options [nop,nop,TS val 200866712 ecr 2138257577], length 224
+17:49:36.369367 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 22256:22800, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257577], length 544
+17:49:36.369655 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 22800:23184, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257577], length 384
+17:49:36.369794 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 23184:23408, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257577], length 224
+17:49:36.369848 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 23408:23792, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257577], length 384
+17:49:36.369955 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 22800, win 3338, options [nop,nop,TS val 2138257578 ecr 200866712], length 0
+17:49:36.370028 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 23792:24016, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257578], length 224
+17:49:36.370167 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 24016:24384, ack 1, win 502, options [nop,nop,TS val 200866713 ecr 2138257578], length 368
+17:49:36.370365 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 24384:24784, ack 1, win 502, options [nop,nop,TS val 200866714 ecr 2138257578], length 400
+17:49:36.370746 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 24384, win 3326, options [nop,nop,TS val 2138257579 ecr 200866713], length 0
+17:49:36.409323 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 24784, win 3424, options [nop,nop,TS val 2138257617 ecr 200866714], length 0
+17:49:36.466575 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 24784:25008, ack 1, win 502, options [nop,nop,TS val 200866810 ecr 2138257617], length 224
+17:49:36.466848 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 25008:25712, ack 1, win 502, options [nop,nop,TS val 200866810 ecr 2138257617], length 704
+17:49:36.467245 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 25712:26400, ack 1, win 502, options [nop,nop,TS val 200866811 ecr 2138257617], length 688
+17:49:36.467439 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 26400:27088, ack 1, win 502, options [nop,nop,TS val 200866811 ecr 2138257617], length 688
+17:49:36.467601 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 27088:27600, ack 1, win 502, options [nop,nop,TS val 200866811 ecr 2138257617], length 512
+17:49:36.468024 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 26400, win 3414, options [nop,nop,TS val 2138257676 ecr 200866810], length 0
+17:49:36.468093 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 27600, win 3406, options [nop,nop,TS val 2138257676 ecr 200866811], length 0
+17:49:36.468108 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 27600:28128, ack 1, win 502, options [nop,nop,TS val 200866811 ecr 2138257676], length 528
+17:49:36.468685 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 28128:29264, ack 1, win 502, options [nop,nop,TS val 200866812 ecr 2138257676], length 1136
+17:49:36.469072 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 29264:30128, ack 1, win 502, options [nop,nop,TS val 200866812 ecr 2138257676], length 864
+17:49:36.469196 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30128:30352, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257676], length 224
+17:49:36.469297 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30352:30576, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257676], length 224
+17:49:36.469392 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 29264, win 3396, options [nop,nop,TS val 2138257677 ecr 200866811], length 0
+17:49:36.469414 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30576:30640, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257677], length 64
+17:49:36.469434 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30640:30864, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257677], length 224
+17:49:36.469530 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30864:30928, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257677], length 64
+17:49:36.469898 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 30576, win 3386, options [nop,nop,TS val 2138257678 ecr 200866812], length 0
+17:49:36.469919 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 30928:31152, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257678], length 224
+17:49:36.470061 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 31152:31440, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257678], length 288
+17:49:36.470178 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 31440:31664, ack 1, win 502, options [nop,nop,TS val 200866813 ecr 2138257678], length 224
+17:49:36.470323 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 31664:31952, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 288
+17:49:36.470421 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 31952:32016, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 64
+17:49:36.470479 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32016:32240, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 224
+17:49:36.470555 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32240:32304, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 64
+17:49:36.470629 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32304:32528, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 224
+17:49:36.470700 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32528:32592, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 64
+17:49:36.470795 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32592:32816, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 224
+17:49:36.470848 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32816:32880, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257678], length 64
+17:49:36.470920 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 31952, win 3376, options [nop,nop,TS val 2138257679 ecr 200866813], length 0
+17:49:36.470963 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 32880:33104, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257679], length 224
+17:49:36.471067 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 33104:33168, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257679], length 64
+17:49:36.471121 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 33168:33392, ack 1, win 502, options [nop,nop,TS val 200866814 ecr 2138257679], length 224
+17:49:36.471222 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 33392:33456, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 64
+17:49:36.471372 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 33456:33904, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 448
+17:49:36.471497 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 33904:34128, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 224
+17:49:36.471626 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 34128:34192, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 64
+17:49:36.471640 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 33104, win 3367, options [nop,nop,TS val 2138257679 ecr 200866814], length 0
+17:49:36.471904 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 34192:34800, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 608
+17:49:36.472016 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 34800:35184, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 384
+17:49:36.472115 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 35184:35568, ack 1, win 502, options [nop,nop,TS val 200866815 ecr 2138257679], length 384
+17:49:36.472217 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 35568:35792, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257679], length 224
+17:49:36.472335 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 35792:35856, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257679], length 64
+17:49:36.472364 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 35856:36080, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257679], length 224
+17:49:36.472434 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 34800, win 3354, options [nop,nop,TS val 2138257680 ecr 200866814], length 0
+17:49:36.472524 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 36080:36448, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257680], length 368
+17:49:36.472672 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 36448:36960, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257680], length 512
+17:49:36.472882 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 36960:37680, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257680], length 720
+17:49:36.472943 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 36080, win 3344, options [nop,nop,TS val 2138257681 ecr 200866815], length 0
+17:49:36.473047 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 37680:37904, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257681], length 224
+17:49:36.473133 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 37904:38352, ack 1, win 502, options [nop,nop,TS val 200866816 ecr 2138257681], length 448
+17:49:36.473234 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 38352:38560, ack 1, win 502, options [nop,nop,TS val 200866817 ecr 2138257681], length 208
+17:49:36.473375 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 37680, win 3332, options [nop,nop,TS val 2138257681 ecr 200866816], length 0
+17:49:36.473410 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 38560:38944, ack 1, win 502, options [nop,nop,TS val 200866817 ecr 2138257681], length 384
+17:49:36.473613 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 38944:39648, ack 1, win 502, options [nop,nop,TS val 200866817 ecr 2138257681], length 704
+17:49:36.473746 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 39648:40496, ack 1, win 502, options [nop,nop,TS val 200866817 ecr 2138257681], length 848
+17:49:36.473852 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 40496:40560, ack 1, win 502, options [nop,nop,TS val 200866817 ecr 2138257681], length 64
+17:49:36.473866 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 38944, win 3323, options [nop,nop,TS val 2138257682 ecr 200866816], length 0
+17:49:36.474163 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 40496, win 3311, options [nop,nop,TS val 2138257682 ecr 200866817], length 0
+17:49:36.521898 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 40560, win 3387, options [nop,nop,TS val 2138257730 ecr 200866817], length 0
+17:49:36.570585 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 40560:40784, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 224
+17:49:36.570789 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 40784:41648, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 864
+17:49:36.570904 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 41648:42016, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 368
+17:49:36.571016 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 42016:42240, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 224
+17:49:36.571119 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 42240:42464, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 224
+17:49:36.571140 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 42464:42848, ack 1, win 502, options [nop,nop,TS val 200866914 ecr 2138257730], length 384
+17:49:36.571254 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 42848:43376, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257730], length 528
+17:49:36.571396 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 43376:43968, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257730], length 592
+17:49:36.571418 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 42016, win 3415, options [nop,nop,TS val 2138257779 ecr 200866914], length 0
+17:49:36.571603 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 43968:44848, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257779], length 880
+17:49:36.571712 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 44848:45232, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257779], length 384
+17:49:36.571898 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 43376, win 3405, options [nop,nop,TS val 2138257780 ecr 200866914], length 0
+17:49:36.571918 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 45232:45296, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257780], length 64
+17:49:36.571967 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 45296:45520, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257780], length 224
+17:49:36.572026 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 45520:45584, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257780], length 64
+17:49:36.572151 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 45584:46096, ack 1, win 502, options [nop,nop,TS val 200866915 ecr 2138257780], length 512
+17:49:36.572246 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 46096:46304, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257780], length 208
+17:49:36.572258 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 44848, win 3394, options [nop,nop,TS val 2138257780 ecr 200866915], length 0
+17:49:36.572434 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 46304:46880, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257780], length 576
+17:49:36.572536 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 46880:47168, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257780], length 288
+17:49:36.572632 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 47168:47456, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257780], length 288
+17:49:36.572735 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 47456:47744, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257780], length 288
+17:49:36.572747 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 46096, win 3385, options [nop,nop,TS val 2138257781 ecr 200866915], length 0
+17:49:36.572853 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 47744:48192, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257781], length 448
+17:49:36.572982 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 48192:48560, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257781], length 368
+17:49:36.573079 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 48560:49008, ack 1, win 502, options [nop,nop,TS val 200866916 ecr 2138257781], length 448
+17:49:36.573304 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 49008:49616, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257781], length 608
+17:49:36.573317 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 47456, win 3375, options [nop,nop,TS val 2138257781 ecr 200866916], length 0
+17:49:36.573539 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 49616:50400, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257781], length 784
+17:49:36.573675 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 50400:51152, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257781], length 752
+17:49:36.573808 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 51152:51584, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257781], length 432
+17:49:36.573936 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 49616, win 3359, options [nop,nop,TS val 2138257782 ecr 200866916], length 0
+17:49:36.573952 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 51584:51872, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257782], length 288
+17:49:36.574050 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 51872:52096, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257782], length 224
+17:49:36.574092 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 52096:52624, ack 1, win 502, options [nop,nop,TS val 200866917 ecr 2138257782], length 528
+17:49:36.574300 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 51152, win 3347, options [nop,nop,TS val 2138257782 ecr 200866917], length 0
+17:49:36.574318 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 52624:52976, ack 1, win 502, options [nop,nop,TS val 200866918 ecr 2138257782], length 352
+17:49:36.574640 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 52624, win 3336, options [nop,nop,TS val 2138257783 ecr 200866917], length 0
+17:49:36.621806 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 52976, win 3382, options [nop,nop,TS val 2138257830 ecr 200866918], length 0
+17:49:36.674513 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 52976:53200, ack 1, win 502, options [nop,nop,TS val 200867018 ecr 2138257830], length 224
+17:49:36.674676 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 53200:54080, ack 1, win 502, options [nop,nop,TS val 200867018 ecr 2138257830], length 880
+17:49:36.674866 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 54080:54784, ack 1, win 502, options [nop,nop,TS val 200867018 ecr 2138257830], length 704
+17:49:36.674978 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 54784:55152, ack 1, win 502, options [nop,nop,TS val 200867018 ecr 2138257830], length 368
+17:49:36.675078 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 55152:55376, ack 1, win 502, options [nop,nop,TS val 200867018 ecr 2138257830], length 224
+17:49:36.675197 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 55376:55600, ack 1, win 502, options [nop,nop,TS val 200867019 ecr 2138257830], length 224
+17:49:36.675336 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 55600:55984, ack 1, win 502, options [nop,nop,TS val 200867019 ecr 2138257830], length 384
+17:49:36.675353 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 54784, win 3414, options [nop,nop,TS val 2138257883 ecr 200867018], length 0
+17:49:36.675538 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 55984:56848, ack 1, win 502, options [nop,nop,TS val 200867019 ecr 2138257883], length 864
+17:49:36.675658 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 56848:57376, ack 1, win 502, options [nop,nop,TS val 200867019 ecr 2138257883], length 528
+17:49:36.675951 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 55984, win 3405, options [nop,nop,TS val 2138257884 ecr 200867018], length 0
+17:49:36.675967 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 57376:57824, ack 1, win 502, options [nop,nop,TS val 200867019 ecr 2138257883], length 448
+17:49:36.676271 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 57824:59936, ack 1, win 502, options [nop,nop,TS val 200867020 ecr 2138257884], length 2112
+17:49:36.676507 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 57376, win 3395, options [nop,nop,TS val 2138257884 ecr 200867019], length 0
+17:49:36.677867 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 59936, win 3376, options [nop,nop,TS val 2138257885 ecr 200867019], length 0
+17:49:36.778561 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 59936:60320, ack 1, win 502, options [nop,nop,TS val 200867122 ecr 2138257885], length 384
+17:49:36.778962 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 60320:61824, ack 1, win 502, options [nop,nop,TS val 200867122 ecr 2138257885], length 1504
+17:49:36.779184 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 61824:62512, ack 1, win 502, options [nop,nop,TS val 200867122 ecr 2138257885], length 688
+17:49:36.779552 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 61824, win 3413, options [nop,nop,TS val 2138257987 ecr 200867122], length 0
+17:49:36.791262 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 62512, win 3424, options [nop,nop,TS val 2138257999 ecr 200867122], length 0
+^C
+287 packets captured
+293 packets received by filter
+0 packets dropped by kernel

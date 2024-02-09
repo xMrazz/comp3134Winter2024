@@ -1,0 +1,4 @@
+tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+17:40:07.243783 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3964556919:3964556983, ack 2629508194, win 502, options [nop,nop,TS val 200297587 ecr 2137688450], length 64
+17:40:07.243873 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 64:144, ack 1, win 502, options [nop,nop,TS val 200297587 ecr 2137688450], length 80

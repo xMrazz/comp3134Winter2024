@@ -1,0 +1,11 @@
+root@comp3134:~# tcpdump -c 5 -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+17:36:44.763540 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 3960012039:3960012167, ack 2629503666, win 502, options [nop,nop,TS val 200095107 ecr 2137485964], length 128
+17:36:44.763715 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 128:272, ack 1, win 502, options [nop,nop,TS val 200095107 ecr 2137485964], length 144
+17:36:44.763951 IP comp3134.ssh > 162.243.190.66.53358: Flags [P.], seq 272:496, ack 1, win 502, options [nop,nop,TS val 200095107 ecr 2137485964], length 224
+17:36:44.764305 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 128, win 501, options [nop,nop,TS val 2137485973 ecr 200095107], length 0
+17:36:44.764382 IP 162.243.190.66.53358 > comp3134.ssh: Flags [.], ack 272, win 501, options [nop,nop,TS val 2137485973 ecr 200095107], length 0
+5 packets captured
+20 packets received by filter
+0 packets dropped by kernel
